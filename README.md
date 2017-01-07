@@ -1,10 +1,18 @@
-Demo: https://bookshelf-eb64e.firebaseapp.com
-
 # Bookshelf (Firebase, Material UI, React, and Redux)
 Bookshelf is an app that helps users keep track of books they have read. This project used https://github.com/r-park/todo-react-redux.git as a starting point, but has been modified heavily to incorporate Material UI and other features.
 
+Try the demo at https://bookshelf-eb64e.firebaseapp.com.
+
+## Features
+- Google sign-in and authentication
+- Ability to add, edit, or delete books
+- Ability to undelete a book
+- Ability to rate books (on a scale of 1 to 5 stars)
+- Ability to mark a book as private or public
+- Material UI
+
 ## Installation and Running
-Run `npm install` and then `npm run dev` to start webpack development server @ localhost:3000
+Run `npm install` and then `npm run dev` to start the webpack development server running on `localhost:3000`
 
 ## Deploying to Firebase
 #### Prerequisites:
