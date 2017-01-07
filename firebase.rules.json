@@ -1,0 +1,16 @@
+{
+  "rules": {
+    "books": {
+      "$uid": {
+        ".read": "auth !== null && auth.uid === $uid",
+        ".write": "auth !== null && auth.uid === $uid"
+      }
+    },
+    "public-books": {
+      ".read": true,
+      "$postID": {
+        ".write": "root.child('books').child(auth.uid).child($postID).exists()"
+      }
+    }
+  }
+}
